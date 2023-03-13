@@ -1,0 +1,55 @@
+.nav {
+  margin-top: 40px;
+}
+
+.menu_items,
+.collapsed_menu_items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu_item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.3s;
+  padding: 8px 16px;
+  border-radius: 8px;
+  height: 40px;
+  cursor: pointer;
+  &:hover {
+    background: #000;
+    .icon_inactive {
+      display: none;
+    }
+    .icon_active {
+      display: block;
+    }
+    .menu_text {
+      color: white;
+    }
+  }
+}
+
+.collapsed_menu_items {
+  align-items: center;
+}
+
+.icon_active,
+.icon_inactive {
+  max-width: 100%;
+}
+
+.icon_active {
+  display: none;
+}
+
+.menu_text {
+  font-weight: 600;
+}
+
+.collapsed_menu_text {
+  display: none;
+  transition: all 0.3s;
+}

@@ -1,0 +1,26 @@
+.profile_menu {
+  background: white;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 8;
+  border-radius: 8px;
+  box-shadow: 2px 0.5px 18px rgb(0, 0, 0, 0.08);
+}
+
+.menu_item {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 16px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  &:hover {
+    background: lightgray;
+    transition: all 0.3s ease;
+  }
+}

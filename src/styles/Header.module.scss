@@ -1,0 +1,37 @@
+.header {
+  position: relative;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  box-shadow: 2px 0.5px 18px rgb(0, 0, 0, 0.08);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile_menu,
+.profile_menu_active {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  transition: all 0.3s;
+}
+
+.profile_menu_active {
+  right: 20px;
+}
+
+// `profile_menu_wrapper absolute top-20 duration-200 ${
+//               showProfileMenu ? "right-8" : "-right-96"
+//             }`
